@@ -32,15 +32,16 @@
     import { getFirestore, collection, onSnapshot, addDoc, updateDoc, deleteDoc, doc } from 'firebase/firestore';
     import { Plus, Trash2, ShoppingBag, Package, Image as ImageIcon, X, AlertCircle } from 'lucide-react';
 
-   const firebaseConfig = {
-  apiKey: "AIzaSyCDb4MX7fuKmENSFJF46mqFF8ub4KHKQ9Y",
+    // ⚠️ 請把這裡替換成你真實的 Firebase 金鑰！
+    const __firebase_config = JSON.stringify({
+     apiKey: "AIzaSyCDb4MX7fuKmENSFJF46mqFF8ub4KHKQ9Y",
   authDomain: "susu-reward-shop.firebaseapp.com",
   projectId: "susu-reward-shop",
   storageBucket: "susu-reward-shop.firebasestorage.app",
   messagingSenderId: "209214547498",
   appId: "1:209214547498:web:bf44fde3936d64016a4553",
   measurementId: "G-ZT7FZMR5TP"
-};
+    });
     
     const appId = 'susu-reward-system';
     const firebaseConfig = JSON.parse(__firebase_config);
